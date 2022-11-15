@@ -67,12 +67,12 @@ const testData  = [
           a_text.innerText = testData[currentQuestion].a;
           b_text.innerText = testData[currentQuestion].b;
       } else {
-        if(score < 10)
-        quiz.innerText = `Its not a covid, propably flue `;
-        else if(score >= 10 && score < 15)
-        quiz.innerText = `Its propably a covid, go to doctor to be sure `;
+        if(score < 6)
+        quiz.innerText = `Nie jest to COVID, raczej przeziebienie lub grypa`;
+        else if(score >= 6 && score < 10)
+        quiz.innerText = `Prawdopodobnie nie jest to covid zrób test aby miec pewnosc`;
         else
-        quiz.innerText = `Its covid, have a lot of rest and put ur mask on :) `;
+        quiz.innerText = `Jest to covid, zostań w domu i unikaj kontaktu z ludzimi`;
          
         submitBtn.innerText = "Restart";
       }
